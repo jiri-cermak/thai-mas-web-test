@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thajské masáže Třeboň</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Roboto+Condensed:wght@300;400&display=swap" rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Roboto Condensed', sans-serif;
+            background-color: #F9F4F0;
+            color: #2D2D2D;
+            line-height: 1.6;
+        }
+
+        h1, h2, h3 {
+            font-family: 'Playfair Display', serif;
+            font-weight: 600;
+            color: #81053D;
+            margin-top: 0;
+        }
+
+        header {
+            padding: 20px 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #F9F4F0;
+            border-bottom: 1px solid rgba(212, 175, 55, 0.3);
+        }
+
+        .logo-img {
+            height: 60px;
+            width: auto;
+            display: block;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #2D2D2D;
+            margin-left: 25px;
+            font-size: 16px;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #81053D;
+        }
+
+        .hero {
+            padding: 60px 10% 70px;
+            background: url('bg.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .hero h1 {
+            font-size: 54px;
+            margin-bottom: 10px;
+            max-width: 700px;
+            color: #81053D;
+            text-shadow: 0 1px 3px rgba(249, 244, 240, 0.8);
+        }
+
+        .hero p {
+            font-size: 20px;
+            max-width: 600px;
+            margin-bottom: 24px;
+            color: #2D2D2D;
+            text-shadow: 0 1px 3px rgba(249, 244, 240, 0.8);
+        }
+
+        .cta-button {
+            display: inline-block;
+            padding: 16px 35px;
+            background-color: #D4AF37;
+            color: #81053D;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: 600;
+            border-radius: 4px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .cta-button:hover {
+            background-color: #81053D;
+            color: #F9F4F0;
+        }
+
+        .intro {
+            padding: 60px 10%;
+            text-align: center;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .intro p {
+            font-size: 18px;
+            color: #4A4A4A;
+        }
+
+        .services {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 40px;
+            padding: 40px 10% 80px;
+        }
+
+        .service-card {
+            border-top: 2px solid #D4AF37;
+            padding-top: 20px;
+        }
+
+        .service-card h3 {
+            font-size: 22px;
+            color: #81053D;
+            margin-bottom: 10px;
+        }
+
+        .service-card p {
+            color: #4A4A4A;
+            margin: 0;
+        }
+
+        .footer {
+            background-color: #81053D;
+            color: #F9F4F0;
+            padding: 60px 10%;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+
+        .footer-info h2 {
+            color: #D4AF37;
+            font-size: 24px;
+            margin-bottom: 15px;
+        }
+
+        .contact-item {
+            margin-bottom: 10px;
+            font-size: 15px;
+        }
+
+        .contact-item a {
+            color: #F9F4F0;
+            text-decoration: none;
+        }
+
+        .contact-item a:hover {
+            text-decoration: underline;
+        }
+
+        .footer-hours p {
+            margin: 0 0 5px;
+            font-size: 15px;
+        }
+
+        .footer-hours .hours-time {
+            font-size: 20px;
+            color: #D4AF37;
+            font-weight: 600;
+        }
+
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                gap: 15px;
+                padding: 20px;
+            }
+
+            nav a {
+                margin-left: 15px;
+                margin-right: 15px;
+            }
+
+            .hero h1 {
+                font-size: 36px;
+            }
+
+            .footer {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <a href="index.html"><img src="garuda.png" alt="Thajské masáže Třeboň" class="logo-img"></a>
+        <nav>
+            <a href="index.html">Úvodní stránka</a>
+            <a href="cenik.html">Ceník</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Thajské masáže</h1>
+        <p>Přijďte se nechat rozmazlit.</p>
+        <a href="cenik.html" class="cta-button">Vybrat si masáž</a>
+    </section>
+
+    <section class="intro">
+        <p>V Penzionu a wellness U Třeboňské madony nabízíme nově také thajské masáže. Naše masérky, paní Dear a Dao, jsou rodilé thajky a mají za sebou léta praxe v Thajsku i po celém světě. Zvládají celou škálu masáží, od reflexních a jemných relaxačních, přes nejvíce žádané thajské olejové, až po tradiční thajské masáže.</p>
+    </section>
+
+    <section class="services">
+        <div class="service-card">
+            <h3>Tradiční thajská masáž</h3>
+            <p>Intenzivní protažení a práce s energetickými liniemi pro uvolnění celého těla bez použití olejů.</p>
+        </div>
+        <div class="service-card">
+            <h3>Thajská olejová masáž</h3>
+            <p>Spojení relaxační masáže s aromaterapií, která využívá vzácné thajské byliny a esenciální oleje.</p>
+        </div>
+        <div class="service-card">
+            <h3>Thajská masáž zad a šíje</h3>
+            <p>Cílená úleva pro ty, kteří tráví dlouhé hodiny u počítače. Rychlá pomoc od ztuhlosti.</p>
+        </div>
+        <div class="service-card">
+            <h3>Masáž obličeje a hlavy</h3>
+            <p>Jemná masáž uvolňující napětí v obličejových svalech a pokožce hlavy.</p>
+        </div>
+        <div class="service-card">
+            <h3>Masáž lávovými kameny</h3>
+            <p>Hloubkové prohřátí svalů a detoxikace organismu pomocí horkých lávových kamenů.</p>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-info">
+            <h2>Thajské masáže Třeboň</h2>
+            <div class="contact-item">Husova 68, 379 01 Třeboň</div>
+            <div class="contact-item"><a href="tel:+420732468022">+420 732 468 022</a></div>
+            <div class="contact-item"><a href="mailto:penzionutrebonskemadony@gmail.com">penzionutrebonskemadony@gmail.com</a></div>
+        </div>
+        <div class="footer-hours">
+            <p>Pracujeme od pondělí do soboty</p>
+            <p class="hours-time">09:00 — 19:00</p>
+            <p>V neděli odpočíváme.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
