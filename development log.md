@@ -201,3 +201,22 @@
 - Garuda icon: `filter: invert(1)` → gold tint via `invert(1) sepia(1) saturate(8) brightness(0.85)`.
 
 ---
+
+### April 27, 2026 (mobile-first rebuild)
+
+**[REFACTOR]** Deleted old `_jana` desktop-first files
+- Removed `index_jana.html` and `cenik_jana.html` (old desktop-first versions).
+
+**[FEAT]** Rebuilt `_jana` from `_jana2` with mobile-first architecture
+- New `index_jana.html` and `cenik_jana.html` created from `_jana2` visual design.
+- **CSS flipped:** base styles = mobile, desktop enhancements in `@media (min-width: 769px)`.
+- **Header:** CSS-only hamburger menu on mobile, horizontal nav on desktop.
+- **Hero:** `padding: 80px 16px 40px` mobile → `120px 20px 60px` desktop. H1 `32px` → `48px`.
+- **CTA:** Full-width (`width: 100%`) on mobile, auto-width inline-block on desktop. `min-height: 48px` for thumb targets.
+- **Cards:** `width: 100%`, stacked on mobile → flex row (`250px`/`280px`) on desktop.
+- **Touch targets:** all interactive elements get `min-height: 44px` / `min-width: 44px`.
+- **Body font-size:** `17px` on mobile (serif readability) → `16px` on desktop.
+- **Removed font switcher** from `_jana` (testing stays in `_jana2`).
+- Visual design unchanged: burgundy header overlay, gold text, background image under header and footer, Merriweather, soft-rectangle CTA.
+
+---
